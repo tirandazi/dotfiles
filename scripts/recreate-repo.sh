@@ -10,8 +10,8 @@ PERSONAL_BIN_DIR="${PERSONAL_BIN_DIR:-"${HOME}/.bin"}"
 usage() {
   echo "Usage: ${0} [-f] <repo folder>"
   echo " -f : force recreation (profiles repo will automatically/always be forced anyways)"
-  echo "    eg: -f ${HOME}                             (will push to keybase://private/avijayr/home)"
-  echo "    eg: ${HOME}/personal/${USERNAME}/profiles  (will push to keybase://private/avijayr/profiles)"
+  echo "    eg: -f ${HOME}                             (will push to keybase://private/tirandazi/home)"
+  echo "    eg: ${HOME}/personal/${USERNAME}/profiles  (will push to keybase://private/tirandazi/profiles)"
   exit 1
 }
 
@@ -47,9 +47,9 @@ extract_git_config_value() {
 crontab -r
 
 # Capture information from pre-existing git repo
-git_url=$(extract_git_config_value remote.origin.url)   # "keybase://private/avijayr/home"
-git_user_name=$(extract_git_config_value user.name)     # "Vijay A"
-git_user_email=$(extract_git_config_value user.email)   # "vraravam@users.noreply.github.com"
+git_url=$(extract_git_config_value remote.origin.url)   # "keybase://private/tirandazi/home"
+git_user_name=$(extract_git_config_value user.name)     # "Upendra"
+git_user_email=$(extract_git_config_value user.email)   # "letsmailupendra@gmail.com"
 git_branch_name=$(${git_cmd} branch --show-current)     # "master"
 
 echo "==> Size of repository at '${folder}' before: $(du -sh "${folder}/.git" | cut -f1)"

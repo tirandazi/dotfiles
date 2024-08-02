@@ -194,6 +194,9 @@
 [checkout]
   defaultRemote = origin
   workers = 0
+[credential]
+  helper = !aws --profile neev-trainee codecommit credential-helper $@
+  UseHttpPath = true
 [color "diff"]
   meta = yellow
   frag = magenta bold

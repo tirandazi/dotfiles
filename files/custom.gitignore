@@ -142,7 +142,6 @@ __pycache__
 /.nix-profile
 /.npm
 /.oh-my-zsh
-/.ollama/
 /.oracle_jre_usage/*.timestamp
 /.org.eclipse*
 /.p4tickets
@@ -203,7 +202,7 @@ __pycache__
 /Box\ Sync
 /Brewfile.lock.json
 /Desktop/
-/dev/
+/projects/
 /Documents/
 /Downloads/
 /go/pkg/
